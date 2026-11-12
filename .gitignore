@@ -1,0 +1,29 @@
+# 敏感配置：包含主机 IP 等环境信息，严禁提交
+SANDBOX.env
+*.env
+!*.env.example
+
+# 本地 Claude Code 配置
+.claude/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+
+# Node / Web
+node_modules/
+manager/web/dist/
+
+# Go
+*.test
+*.out
+coverage.out
+
+# 编辑器 / 系统
+.idea/
+.vscode/
+.DS_Store
